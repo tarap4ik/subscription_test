@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @RestControllerAdvice
 public class CustomExceptionHandler {
 
-    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
     @ExceptionHandler({NotFoundUserException.class, NotFoundSubscriptionException.class})
     public void handleException() {
     }
