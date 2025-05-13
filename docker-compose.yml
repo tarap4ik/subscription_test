@@ -19,8 +19,6 @@ services:
     container_name: java_app
     depends_on:
       - postgres-db
-    environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-db/subs
     ports:
       - "8080:8080"
     networks:
